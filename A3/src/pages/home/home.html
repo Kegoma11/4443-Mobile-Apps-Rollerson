@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Map
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <button ion-button (click) = "start()"> Start Locating</button>
+  <button ion-button (click)="addMarker()"><ion-icon name = "add"></ion-icon>Add Marker</button>
+  <div #map id = "map"></div>
+</ion-content>
