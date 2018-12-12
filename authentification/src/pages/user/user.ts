@@ -26,7 +26,7 @@ export class UserPage{
     }, err => console.log(err))
   }
 
-
+//log user out
   logout(){
     this.authService.doLogout()
     .then((res) => {
