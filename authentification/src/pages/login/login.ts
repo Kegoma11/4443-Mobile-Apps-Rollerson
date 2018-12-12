@@ -29,7 +29,8 @@ export class LoginPage {
       password: new FormControl(),
     });
   }
-
+//Tries to log user in with email & password
+  //Otherwise, catches error
   tryLogin(value){
     this.authService.doLogin(value)
     .then(res => {
@@ -40,7 +41,8 @@ export class LoginPage {
       this.errorMessage = err.message;
     })
   }
-
+//Tries to log user in with Facebook account
+  //Otherwise, catches error
   tryFacebookLogin(){
     this.authService.doFacebookLogin()
     .then((res) => {
@@ -49,7 +51,8 @@ export class LoginPage {
       this.errorMessage = err.message;
     });
   }
-
+//Tries to log user in with google account
+  //Otherwise, catches error
   tryGoogleLogin(){
     this.authService.doGoogleLogin()
     .then((res) => {
