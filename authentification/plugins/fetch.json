@@ -1,0 +1,13 @@
+{
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4@1.10.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "208738826720344",
+      "APP_NAME": "ionic-firebase-authentication-master"
+    }
+  }
+}
