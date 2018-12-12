@@ -31,7 +31,7 @@ export class RegisterPage {
       password: new FormControl()
     });
   }
-
+ //Creates a new user and adds to firebase
   tryRegister(value){
     this.authService.doRegister(value)
      .then(res => {
@@ -42,7 +42,7 @@ export class RegisterPage {
        this.successMessage = "";
      })
   }
-
+//Trys to login in with facebook
   tryFacebookLogin(){
     this.authService.doFacebookLogin()
     .then((res) => {
@@ -51,7 +51,7 @@ export class RegisterPage {
       this.errorMessage = err.message;
     });
   }
-
+ //Trys to login in with google
   tryGoogleLogin(){
     this.authService.doGoogleLogin()
     .then((res) => {
